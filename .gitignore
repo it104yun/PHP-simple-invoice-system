@@ -1,0 +1,55 @@
+# Ignore common files and directories for a PHP project
+/DOC/
+
+# PHP related
+*.phpunit.result.cache
+*.cache
+*.log
+
+# Composer
+/vendor/
+composer.phar
+
+# Environment / secret files
+.env
+.env.*.local
+.env.local
+.php-version
+
+# Dependency managers
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build / distribution
+/build/
+dist/
+coverage/
+coverage.xml
+
+# Framework / app folders (adjust if your app uses different directories)
+storage/
+logs/
+tmp/
+cache/
+bootstrap/cache/
+
+# IDEs and editors
+/.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.kate-swp
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Misc
+*.sqlite
+*.sqlite3
+*.sql
+*.bak
+*.env.backup

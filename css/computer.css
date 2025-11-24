@@ -1,0 +1,14 @@
+/* css/computer.css */
+.invoice-paper {
+    /* 電子發票可能更像收據的風格 */
+    border: 1px solid #999;
+    padding: 15px;
+    background-color: #fff;
+    font-family: 'Courier New', monospace; /* 模擬點陣列印機字體 */
+}
+.header h1 {
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* ... 可以在此處加入更精細的排版控制 ... */

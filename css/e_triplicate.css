@@ -1,0 +1,21 @@
+/* css/e_triplicate.css */
+.invoice-paper {
+    /* 模擬 A4 尺寸的電子發票格式 */
+    border: 1px solid #0000ff; /* 邊框使用藍色區分 */
+    padding: 25px;
+    background-color: #f7fcff; /* 淺藍色背景 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header h1 {
+    color: #0000ff;
+    font-size: 26px;
+    border-bottom: 3px double #0000ff;
+    padding-bottom: 8px;
+}
+
+.table-invoice th {
+    background-color: #e0f0ff; /* 淺藍色表頭 */
+    color: #000;
+}
+/* ... 您可以繼續添加更專業的樣式 ... */
