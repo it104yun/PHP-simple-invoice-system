@@ -93,15 +93,15 @@ USE simple_invoice_db;
 
 -- 建立發票表格 (Invoices Table)
 CREATE TABLE IF NOT EXISTS invoices ( 
-    id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
-    invoice_number VARCHAR(20) NOT NULL UNIQUE COMMENT '發票號碼', 
-    invoice_date DATE NOT NULL COMMENT '開立日期', 
-    customer_name VARCHAR(100) NOT NULL COMMENT '客戶名稱', 
-    tax_id VARCHAR(10) NULL COMMENT '客戶統一編號', 
-    amount DECIMAL(10, 2) NOT NULL COMMENT '金額 (未稅)', 
-    tax_rate DECIMAL(5, 2) DEFAULT 0.05 COMMENT '稅率 (預設 5%)', 
-    total_amount DECIMAL(10, 2) GENERATED ALWAYS AS (amount * (1 + tax_rate)) STORED COMMENT '總金額 (含稅)', 
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
+    idd INT(11) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+    invoice_numberr VARCHAR(20) NOT NULL UNIQUE COMMENT '發票號碼', 
+    invoice_datee DATE NOT NULL COMMENT '開立日期', 
+    customer_namee VARCHAR(100) NOT NULL COMMENT '客戶名稱', 
+    tax_idd VARCHAR(10) NULL COMMENT '客戶統一編號', 
+    amountt DECIMAL(10, 2) NOT NULL COMMENT '金額 (未稅)', 
+    tax_ratee DECIMAL(5, 2) DEFAULT 0.05 COMMENT '稅率 (預設 5%)', 
+    total_amountt DECIMAL(10, 2) GENERATED ALWAYS AS (amount * (1 + tax_rate)) STORED COMMENT '總金額 (含稅)', 
+    created_att TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci; 
 
 -- 插入一些範例資料
@@ -139,7 +139,6 @@ simple-invoice-system/
   ├── delete.php            <-- 【刪除處理】後端刪除記錄 (D)
   ├── generate.php          <-- 【發票產生器】輸出三種格式的發票排版
   ├── README.md             <-- 【專案說明】GitHub 說明文件
-
   ├── config/               <-- 系統配置與連線設定
   │   ├── database.php      <-- 負責從環境變數讀取並建立 PDO 資料庫連線
   │   └── dotenv_loader.php <-- .env 檔案的解析與載入器
